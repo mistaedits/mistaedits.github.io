@@ -83,8 +83,12 @@ section{padding:80px 0}
 .show:hover .th:after{background:rgba(0,0,0,.05);color:var(--lime)}
 .show .t{padding:14px 16px;font-weight:600;font-size:15px}
 /* pricing */
-.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
-@media(max-width:860px){.prices{grid-template-columns:1fr}}
+.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-items:stretch}
+@media(max-width:1100px){.prices{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.prices{grid-template-columns:1fr}}
+.price.new:before{content:"Yeni başlayanlara özel";position:absolute;top:-13px;left:26px;background:#25d366;color:#04210f;font-size:12px;font-weight:800;padding:4px 10px;border-radius:99px}
+.price.new{position:relative;border-color:#25d366}
+.price .who{color:var(--mut);font-size:14px;margin-top:-6px}
 .price{display:flex;flex-direction:column;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px 26px}
 .price.hot{border-color:var(--lime);box-shadow:0 0 0 1px var(--lime),0 20px 50px rgba(184,243,26,.08);position:relative}
 .price.hot:before{content:"En çok tercih edilen";position:absolute;top:-13px;left:26px;background:var(--lime);color:#000;font-size:12px;font-weight:800;padding:4px 10px;border-radius:99px}
@@ -190,6 +194,9 @@ footer .legal a{display:inline;margin:0}
 <section id="fiyat"><div class="wrap">
   <div class="sec-head"><span class="eyebrow">Fiyatlar</span><h2>Yayıncılara kesit paketleri</h2><p>Aylık paket, taahhüt yok. İlk 3 kesit ücretsiz; beğenirsen devam edersin.</p></div>
   <div class="prices">
+    <div class="price new"><h3>Yeni Yayıncı</h3><div class="who">5.000 takipçiye kadar kanallar için</div><div class="amt">₺750<small> / ay</small></div>
+      <ul><li>Ayda 15 kısa video</li><li>Haftada 3-4 kesit teslim</li><li>Shorts, Reels, TikTok'a hazır</li><li>Türkçe alt yazı ve logo</li><li>Hazır başlık ve açıklama</li></ul>
+      <a class="btn" href="https://wa.me/905303080662?text=Merhaba%2C%20Yeni%20Yay%C4%B1nc%C4%B1%20paketi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Hemen başla</a></div>
     <div class="price"><h3>Başlangıç</h3><div class="amt">₺1.500<small> / ay</small></div>
       <ul><li>Ayda 30 kısa video</li><li>Her gün 1 kesit teslim</li><li>Shorts, Reels, TikTok'a hazır</li><li>Türkçe alt yazı ve logo</li><li>Hazır başlık ve açıklama</li></ul>
       <a class="btn" href="#iletisim">Başla</a></div>
